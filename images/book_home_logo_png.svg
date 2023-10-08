@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="159.42172mm"
+   height="160.06741mm"
+   viewBox="0 0 159.42172 160.06741"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
+   sodipodi:docname="bookhome_logo.svg"
+   inkscape:export-filename="..\Assignment 2\BookHome - CSS\images\book_home_logo_png.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.53102946"
+     inkscape:cx="-179.83936"
+     inkscape:cy="403.93239"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     inkscape:window-x="-9"
+     inkscape:window-y="1341"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath5095">
+      <ellipse
+         style="fill:#ffb380;stroke-width:0.604456"
+         id="ellipse5097"
+         cx="101.90657"
+         cy="95.985069"
+         rx="79.710861"
+         ry="80.033707" />
+    </clipPath>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-22.19571,-15.951371)">
+    <ellipse
+       style="display:inline;fill:#ffb380;stroke-width:0.604456"
+       id="path878"
+       cx="101.90657"
+       cy="95.985077"
+       rx="79.710861"
+       ry="80.033707" />
+    <path
+       style="fill:#d45500;fill-opacity:0.618497;stroke-width:0.264583"
+       d="M 71.871884,146.20996 151.14235,201.52313 203.98932,127.53736 143.74377,80.679715 82.441279,80.327401 Z"
+       id="path4873"
+       clip-path="url(#clipPath5095)"
+       transform="matrix(-1,0,0,1,203.89498,0)" />
+    <rect
+       style="fill:#008080;stroke-width:0.264583"
+       id="rect998"
+       width="60.245552"
+       height="70.110321"
+       x="73.633453"
+       y="77.15657" />
+    <rect
+       style="fill:#d7ceb9;fill-opacity:1;stroke-width:0.235487"
+       id="rect1788"
+       width="53.655106"
+       height="62.359432"
+       x="77.259453"
+       y="81.472412" />
+    <rect
+       style="fill:#9f9274;fill-opacity:0.789017;stroke-width:0.23396"
+       id="rect1791"
+       width="52.96278"
+       height="62.359432"
+       x="74.836319"
+       y="81.472412" />
+    <rect
+       style="fill:#00a8a8;fill-opacity:1;stroke-width:0.240891"
+       id="rect382"
+       width="51.96619"
+       height="67.375465"
+       x="71.87188"
+       y="79.912796"
+       inkscape:label="book cover" />
+    <path
+       style="fill:#1a6666;fill-opacity:0.303468;stroke-width:0.783622"
+       d="M 135.45811,81.319876 71.520638,81.109798 71.347128,104.29009 Z"
+       id="path2441" />
+    <path
+       style="fill:#008080;stroke-width:0.538213"
+       d="M 102.17083,39.106768 59.893238,81.384344 h 83.498232 z"
+       id="path284"
+       sodipodi:nodetypes="cccc" />
+    <rect
+       style="fill:#1a6666;fill-opacity:1;stroke-width:0.369566"
+       id="rect2496"
+       width="5.6601801"
+       height="61.010689"
+       x="99.257362"
+       y="-42.756516"
+       transform="matrix(0.72005324,0.69391882,-0.70757594,0.70663731,0,0)"
+       inkscape:label="roof book" />
+    <rect
+       style="fill:#1a6666;fill-opacity:1;stroke-width:0.369566"
+       id="rect4091"
+       width="5.6601801"
+       height="61.010689"
+       x="39.054394"
+       y="100.49776"
+       transform="matrix(0.69391882,-0.72005324,0.70663731,0.70757594,0,0)"
+       inkscape:label="roof book" />
+  </g>
+</svg>

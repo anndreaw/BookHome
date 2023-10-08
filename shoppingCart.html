@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang=""en">
+<head>
+    <title>BookHome - Shopping Cart </title>
+    <meta charset=""utf-8>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <img src="images/book_home_logo_with_bg.svg">
+        <h1>BookHome</h1>
+    </div>
+</header>
+
+<main>
+    <!--NAVIGATION BAR-->
+    <div id="navTop" style="position:sticky; top:0; z-index:10;" class="nav-top">
+        <nav class="nav-top container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Books</a>
+                    <div class="dropdown-content">
+                        <a href="deals.html">Deals</a>
+                        <a href="fiction.html">Fiction</a>
+                        <a href="nonFiction.html">Non-Fiction</a>
+                    </div>
+                </li>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li class="menu">
+                    <a href="javascript:void(0);" onclick="navBarMinimize()"><img src="images/menu_icon.svg" alt="menu icon"></a>
+                </li>
+            </ul>
+            <div class="nav-right">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search">
+                    <button><img src="images/search_icon.svg" alt="search icon"></button>
+                </div>
+                <div id="not-login" class="login-icon">
+                    <a href="logIn.html">Log-in/Sign-up</a>
+                </div>
+                <div class="shopping-cart">
+                    <a href="shoppingCart.html"><img src="images/shopping_cart_icon.svg" alt=" shopping cart"></a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!--MAIN CONTENTS-->
+    <section class="content">
+    <div class="shopping-cart-view">
+        <h2 class="section-headers">Shopping Cart</h2>
+        <div class="container">
+            <div class="product-info background-layout">
+            <article class="scroll-container scroller">
+                <table>
+                    <tr>
+                        <th colspan="2">Product</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                    </tr>
+                    <tr>
+                        <td><img class="aspect-ratio fit" src="product-images/When_I_Was_a_Kid.jfif" alt="When I Was a Kid"></td>
+                        <td><a href="products/whenIWasaKid.html"><b>When I Was a Kid</b></a></td>
+                        <td>
+                            <div class="quantity-buttons">
+                                <input type="button" value="-" class="minus" onclick="minusQty()">
+                                <input type="number" value="1" id="quantityNum" class="input-text">
+                                <input type="button" value="+" class="plus" onclick="addQty()">
+                            </div>
+                        </td>
+                        <td>RM8.99</td>
+                    </tr>
+                    <tr>
+                        <td><img class="aspect-ratio fit" src="product-images/book_thief.jpg" alt="The Book Thief"></td>
+                        <td><a href="products/bookThief.html"><b>The Book Thief</b></a></td>
+                        <td>
+                            <div class="quantity-buttons">
+                                <input type="button" value="-" class="minus" onclick="minusQty()">
+                                <input type="number" value="1" id="quantityNum" class="input-text">
+                                <input type="button" value="+" class="plus" onclick="addQty()">
+                            </div>
+                        </td>
+                        <td>RM12.90</td>
+                    </tr>
+                </table>
+            </article>
+            </div>
+            <div class="to-checkout background-layout">
+                <article>
+                    <table>
+                        <tr>
+                            <td><h3>Total</h3></td>
+                            <td>RM21.89</td>
+                        </tr>
+                    </table>
+                </article>
+                <button class="button">
+                    <a href="checkOut.html" class="button" id="add-to-cart">Checkout</a>
+                </button>
+            </div>
+        </div>
+    </div>
+    </section> 
+</main>
+
+<footer>
+    <!--BOTTOM NAVIGATION BAR-->
+    <nav class="bottom container">
+        <div class="col about-us">
+            <h4><a href="aboutUs.html">About Us</a></h4>
+        </div>
+        <div class="col book-nav">
+            <h4>Books</h4>
+            <ul>
+                <li><a href="deals.html">Deals</a></li>
+                <li><a href="fiction.html">Fiction</a></li>
+                <li><a href="nonFiction.html">Non-Fiction</a></li>
+            </ul>
+        </div>
+        <div class="col contact-us">
+            <h4><a href="aboutUs.html#ConUs">Contact Us</a></h4>
+            <ul>
+                <li class="newsletter">
+                    <p><i>Connect with our newsletter</i></p>
+                    <div>
+                        <input class="newsletter" type="text" placeholder="Enter your email">
+                    </div>   
+                </li>
+                <li>
+                    <ul class="social-media">
+                        <li><a href="https://www.facebook.com"><img src="images/facebook.svg" alt="Facebook"></a></li>
+                        <li><a href="https://www.instagram.com/?hl=en"><img src="images/instagram.svg" alt="Instagram"></a></li>
+                        <li><a href="https://twitter.com/?lang=en"><img src="images/twitter.svg" alt="Twitter"></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br style="clear:both;">
+    <span><small><i>copyright &copy; 2022 BookHome</i></small></span>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang=""en">
+<head>
+    <title>BookHome - When I Was a Kid </title>
+    <meta charset=""utf-8>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <img src="../images/book_home_logo_with_bg.svg">
+        <h1>BookHome</h1>
+    </div>
+</header>
+
+<main>
+    <!--NAVIGATION BAR-->
+    <div id="navTop" style="position:sticky; top:0; z-index:10;" class="nav-top">
+        <nav class="nav-top container">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Books</a>
+                    <div class="dropdown-content">
+                        <a href="../deals.html">Deals</a>
+                        <a href="../fiction.html">Fiction</a>
+                        <a href="../nonFiction.html">Non-Fiction</a>
+                    </div>
+                </li>
+                <li><a href="../aboutUs.html">About Us</a></li>
+                <li class="menu">
+                    <a href="javascript:void(0);" onclick="navBarMinimize()"><img src="../images/menu_icon.svg" alt="menu icon"></a>
+                </li>
+            </ul>
+            <div class="nav-right">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search">
+                    <button><img src="../images/search_icon.svg" alt="search icon"></button>
+                </div>
+                <div id="not-login" class="login-icon">
+                    <a href="../logIn.html">Log-in/Sign-up</a>
+                </div>
+                <div class="shopping-cart">
+                    <a href="../shoppingCart.html"><img src="../images/shopping_cart_icon.svg" alt=" shopping cart"></a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!--MAIN CONTENTS-->
+    <section class="content">
+        <div class="product-page container">
+            <div class="image">
+                <div class="background-layout container">
+                    <img class="aspect-ratio fit" src="../product-images/When_I_Was_a_Kid.jfif" alt="When I Was a Kid">
+                </div>
+            </div>
+            <div class="product-text background-layout">
+                <article class="product-top-info">
+                    <div class="product-info">
+                        <div class="product-info-top-half">
+                            <h2>When I Was a Kid</h2>
+                            <p>Author: Boey</p>
+                            <p>Genre: Biography </p>
+                        </div>
+                        <form class="product-form">
+                            <div>
+                            <table id="product-data">
+                                <tr>
+                                <th><strong>Price:</strong></th>
+                                <td><strike>RM19.99</strike>RM8.99</td>
+                                </tr>
+                                <tr>
+                                <th><strong>Quality:</strong></th>
+                                <td>Like New</td>
+                                </tr>
+                                <tr>
+                                <th><strong>Stock:</strong></th>
+                                <td><div>3</div></td>
+                                </tr>
+                            </table>
+                            </div>
+                            <div>
+                                <div class="quantity-buttons">
+                                    <input type="button" value="-" class="minus" onclick="minusQty()">
+                                    <input type="number" value="1" id="quantityNum" class="input-text">
+                                    <input type="button" value="+" class="plus" onclick="addQty()">
+                                </div>
+                            </div>
+                            <div>
+                                <button class="button">
+                                <a href="../shoppingCart.html" class="button" id="add-to-cart">Add to Cart</a>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </article>
+                <article class="product-description product-info">
+                    <h3>Description</h3>
+                        <p>Boey is a 33-year-old Malaysian animator / artist based in the US and he is best 
+                        known for his artwork on Styrofoam cups.</p>
+                        <p>The stories in the book are a reflection of his childhood spent growing up in Johor Bahru 
+                        and crossing the causeway to attend school in Singapore in the 1980s. At 17, he packed his 
+                        bags and headed to San Francisco to study and has gone on to establish his career there. </p>
+                        <p>The stories first appeared on his blog <a href="www.iamboey.com">www.iamboey.com</a> and the number of followers 
+                        increased over the years encouraging Boey to compile some of the stories into his first 
+                        book.Funny, poignant, honest, When I was a Kid is illustrated in simple stick figures 
+                        accompanied by short descriptions. Each story is self contained and can be read in any order.</p>
+                </article>
+            </div>
+        </div>
+        <br style="clear:both;">
+    </section>
+</main>
+
+<footer>
+    <!--BOTTOM NAVIGATION BAR-->
+    <nav class="bottom container">
+        <div class="col about-us">
+            <h4><a href="../aboutUs.html">About Us</a></h4>
+        </div>
+        <div class="col book-nav">
+            <h4>Books</h4>
+            <ul>
+                <li><a href="../deals.html">Deals</a></li>
+                <li><a href="../fiction.html">Fiction</a></li>
+                <li><a href="../nonFiction.html">Non-Fiction</a></li>
+            </ul>
+        </div>
+        <div class="col contact-us">
+            <h4><a href="../aboutUs.html#ConUs">Contact Us</a></h4>
+            <ul>
+                <li class="newsletter">
+                <p><i>Connect with our newsletter</i></p>
+                <div>
+                <input class="newsletter" type="text" placeholder="Enter your email">
+                </div>   
+                </li>
+                <li>
+                <ul class="social-media">
+                    <li><a href="https://www.facebook.com"><img src="../images/facebook.svg" alt="Facebook"></a></li>
+                    <li><a href="https://www.instagram.com/?hl=en"><img src="../images/instagram.svg" alt="Instagram"></a></li>
+                    <li><a href="https://twitter.com/?lang=en"><img src="../images/twitter.svg" alt="Twitter"></a></li>
+                </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br style="clear:both;">
+    <span><small><i>copyright &copy; 2022 BookHome</i></small></span>
+</footer>
+
+<script src="../js/script.js"></script>
+</body>
+</html>

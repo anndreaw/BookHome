@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang=""en">
+<head>
+    <title>BookHome - Oxford English Dictionary </title>
+    <meta charset=""utf-8>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <img src="../images/book_home_logo_with_bg.svg">
+        <h1>BookHome</h1>
+    </div>
+</header>
+
+<main>
+    <!--NAVIGATION BAR-->
+    <div id="navTop" style="position:sticky; top:0; z-index:10;" class="nav-top">
+        <nav class="nav-top container">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Books</a>
+                    <div class="dropdown-content">
+                        <a href="../deals.html">Deals</a>
+                        <a href="../fiction.html">Fiction</a>
+                        <a href="../nonFiction.html">Non-Fiction</a>
+                    </div>
+                </li>
+                <li><a href="../aboutUs.html">About Us</a></li>
+                <li class="menu">
+                    <a href="javascript:void(0);" onclick="navBarMinimize()"><img src="../images/menu_icon.svg" alt="menu icon"></a>
+                </li>
+            </ul>
+            <div class="nav-right">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search">
+                    <button><img src="../images/search_icon.svg" alt="search icon"></button>
+                </div>
+                <div id="not-login" class="login-icon">
+                    <a href="../logIn.html">Log-in/Sign-up</a>
+                </div>
+                <div class="shopping-cart">
+                    <a href="../shoppingCart.html"><img src="../images/shopping_cart_icon.svg" alt=" shopping cart"></a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!--MAIN CONTENTS-->
+    <section class="content">
+        <div class="product-page container">
+            <div class="image">
+                <div class="background-layout container">
+                    <img class="aspect-ratio fit" src="../product-images/oxford_english_dictionary.jpg" alt="oxford_english_dictionary">
+                </div>
+            </div>
+            <div class="product-text background-layout">
+                <article class="product-top-info">
+                    <div class="product-info">
+                        <div class="product-info-top-half">
+                            <h2>Oxford English Dictionary</h2>
+                            <p>Author: Oxford Languages</p>
+                            <p>Genre: Education</p>
+                        </div>
+                        <form class="product-form">
+                            <div>
+                                <table id="product-data">
+                                    <tr>
+                                        <td><strong>Price:</strong></td>
+                                        <td>RM45.99</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Quality:</strong></td>
+                                        <td>Good Condition, Spine a little creased</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Stock:</strong></td>
+                                        <td><div>2</div></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div>
+                                <div class="quantity-buttons">
+                                    <input type="button" value="-" class="minus" onclick="minusQty()">
+                                    <input type="number" value="1" id="quantityNum" class="input-text">
+                                    <input type="button" value="+" class="plus" onclick="addQty()">
+                                </div>
+                            </div>
+                            <div>
+                                <button class="button">
+                                    <a href="../shoppingCart.html" class="button" id="add-to-cart">Add to Cart</a>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </article>
+                <article class="product-description product-info">
+                    <h3>Description</h3>
+                    <div>
+                        <p>
+                            The foremost single volume authority on the English language, the Oxford 
+                            Dictionary of English is at the forefront of language research, focusing on 
+                            English as it is used today. It is informed by the most up-to-date evidence 
+                            from the largest language research programme in the world, including the 
+                            two-billion-word Oxford English Corpus.
+                        </p>
+                        <p>
+                            This new edition includes thousands of brand-new words and senses, as well as 
+                            up-to-date encyclopedic information, and extensive appendices covering topics 
+                            such as countries, heads of state, and chemical elements.
+                        </p>
+                        <p>
+                            New features include Word Trends which showcase language research based on 
+                            the Oxford English Corpus and illuminate the extraordinary stories behind 
+                            fast-changing words of everyday English.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </div>
+        <br style="clear:both;">
+    </section>
+
+</main>
+
+<footer>
+    <!--BOTTOM NAVIGATION BAR-->
+    <nav class="bottom container">
+        <div class="col about-us">
+            <h4><a href="../aboutUs.html">About Us</a></h4>
+        </div>
+        <div class="col book-nav">
+            <h4>Books</h4>
+            <ul>
+                <li><a href="../deals.html">Deals</a></li>
+                <li><a href="../fiction.html">Fiction</a></li>
+                <li><a href="../nonFiction.html">Non-Fiction</a></li>
+            </ul>
+        </div>
+        <div class="col contact-us">
+            <h4><a href="../aboutUs.html#ConUs">Contact Us</a></h4>
+            <ul>
+                <li class="newsletter">
+                <p><i>Connect with our newsletter</i></p>
+                <div>
+                <input class="newsletter" type="text" placeholder="Enter your email">
+                </div>   
+                </li>
+                <li>
+                <ul class="social-media">
+                    <li><a href="https://www.facebook.com"><img src="../images/facebook.svg" alt="Facebook"></a></li>
+                    <li><a href="https://www.instagram.com/?hl=en"><img src="../images/instagram.svg" alt="Instagram"></a></li>
+                    <li><a href="https://twitter.com/?lang=en"><img src="../images/twitter.svg" alt="Twitter"></a></li>
+                </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br style="clear:both;">
+    <span><small><i>copyright &copy; 2022 BookHome</i></small></span>
+</footer>
+
+<script src="../js/script.js"></script>
+</body>
+</html>

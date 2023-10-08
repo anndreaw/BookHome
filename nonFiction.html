@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang=""en">
+<head>
+    <title>BookHome - Non-fiction </title>
+    <meta charset=""utf-8>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <img src="images/book_home_logo_with_bg.svg">
+        <h1>BookHome</h1>
+    </div>
+</header>
+
+<main>
+    <!--NAVIGATION BAR-->
+    <div id="navTop" style="position:sticky; top:0; z-index:10;" class="nav-top">
+        <nav class="nav-top container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Books</a>
+                    <div class="dropdown-content">
+                        <a href="deals.html">Deals</a>
+                        <a href="fiction.html">Fiction</a>
+                        <a href="nonFiction.html">Non-Fiction</a>
+                    </div>
+                </li>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li class="menu">
+                    <a href="javascript:void(0);" onclick="navBarMinimize()"><img src="images/menu_icon.svg" alt="menu icon"></a>
+                </li>
+            </ul>
+            <div class="nav-right">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search">
+                    <button><img src="images/search_icon.svg" alt="search icon"></button>
+                </div>
+                <div id="not-login" class="login-icon">
+                    <a href="logIn.html">Log-in/Sign-up</a>
+                </div>
+                <div class="shopping-cart">
+                    <a href="shoppingCart.html"><img src="images/shopping_cart_icon.svg" alt=" shopping cart"></a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!--MAIN CONTENTS-->
+    <section class="content">
+        <h2 class="section-headers">Non-Fiction</h2>
+        <div class="product-catalogue container">
+            <article class="product shadow">
+                <div class="product-container">
+                    <div class="image-container inner-shadow">
+                        <a href="products/beTheHandsandFeet.html">
+                        <img class="aspect-ratio fit" src="product-images/be_the_hands_and_feet.jfif" alt="Be the Hands and Feet">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <a href="products/beTheHandsandFeet.html">
+                        <h3>Be the Hands and Feet</h3>
+                        </a>
+                        <p>Nick Vujicic</p>
+                        <p id="price">RM18.99</p>
+                    </div>
+                </div>
+                <a href="products/beTheHandsandFeet.html" class="button" id="add-to-cart">Add to Cart</a>
+            </article>
+            <article class="product shadow">
+                <div class="product-container">
+                    <div class="image-container inner-shadow">
+                        <a href="products/whenIWasaKid.html">
+                        <img class="aspect-ratio fit" src="product-images/When_I_Was_a_Kid.jfif" alt="When I Was a Kid" width="300" height="400">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <a href="products/whenIWasaKid.html">
+                        <h3>When I Was a Kid</h3>
+                        </a>
+                        <p>Boey</p>
+                        <p id="price"><strike>RM19.99</strike> RM8.99</p>
+                    </div>
+                </div>
+                <a href="products/whenIWasaKid.html" class="button" id="add-to-cart">Add to Cart</a>
+            </article>
+            <article class="product shadow">
+                <div class="product-container">
+                    <div class="image-container inner-shadow">
+                        <a href="products/oxfordDictionary.html">
+                        <img class="aspect-ratio fit" src="product-images/oxford_english_dictionary.jpg" alt="iT">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <a href="products/oxfordDictionary.html">
+                        <h3>Oxford English Dictionary</h3>
+                        </a>
+                        <p>Oxford Langugages</p>
+                        <p id="price">RM45.99</p>
+                    </div>
+                </div>
+                <a href="products/oxfordDictionary.html" class="button" id="add-to-cart">Add to Cart</a>
+            </article>
+            <article class="product shadow">
+                <div class="product-container">
+                    <div class="image-container inner-shadow">
+                        <a href="products/theChinaTeaBook.html">
+                        <img class="aspect-ratio fit" src="product-images/The_China_Tea_Book.jpg" alt="theChinaTeaBook">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <a href="products/theChinaTeaBook.html">
+                        <h3>The China Tea Book</h3>
+                        </a>
+                        <p>Luo Jialin</p>
+                        <p id="price"><strike>RM19.99</strike> RM5.99</p>
+                    </div>
+                </div>
+                <a href="products/theChinaTeaBook.html" class="button" id="add-to-cart">Add to Cart</a>
+            </article>
+            <article class="product shadow">
+                <div class="product-container">
+                    <div class="image-container inner-shadow">
+                        <a href="products/igcseChemistry.html">
+                        <img class="aspect-ratio fit" src="product-images/igcse_chemistry_third_edition.jpg" alt="igcse_chemistry_third_edition">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <a href="products/igcseChemistry.html">
+                        <h3>Cambridge IGCSE Chemistry</h3>
+                        </a>
+                        <p>Bryan Earl, Doug Wilford</p>
+                        <p id="price"><strike>RM64.99</strike> RM24.99</p>
+                    </div>
+                </div>
+                <a href="products/igcseChemistry.html" class="button" id="add-to-cart">Add to Cart</a>
+            </article>
+            <article class="product shadow">
+                <div class="product-container">
+                    <div class="image-container inner-shadow">
+                        <a href="products/puppiesForDummies.html">
+                        <img class="aspect-ratio fit" src="product-images/Puppies_for_Dummies.jpg" alt="Puppies_for_Dummies">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <a href="products/puppiesForDummies.html">
+                        <h3>Puppies for Dummies</h3>
+                        </a>
+                        <p>Sarah Hodgson</p>
+                        <p id="price">RM19.99</p>
+                    </div>
+                </div>
+                <a href="products/puppiesForDummies.html" class="button" id="add-to-cart">Add to Cart</a>
+            </article>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <!--BOTTOM NAVIGATION BARS-->
+    <nav class="bottom container">
+        <div class="col about-us">
+            <h4><a href="aboutUs.html">About Us</a></h4>
+        </div>
+        <div class="col book-nav">
+            <h4>Books</h4>
+            <ul>
+                <li><a href="deals.html">Deals</a></li>
+                <li><a href="fiction.html">Fiction</a></li>
+                <li><a href="nonFiction.html">Non-Fiction</a></li>
+            </ul>
+        </div>
+        <div class="col contact-us">
+            <h4><a href="aboutUs.html#ConUs">Contact Us</a></h4>
+            <ul>
+                <li class="newsletter">
+                    <p><i>Connect with our newsletter</i></p>
+                    <div>
+                        <input class="newsletter" type="text" placeholder="Enter your email">
+                    </div>   
+                </li>
+                <li>
+                    <ul class="social-media">
+                        <li><a href="https://www.facebook.com"><img src="images/facebook.svg" alt="Facebook"></a></li>
+                        <li><a href="https://www.instagram.com/?hl=en"><img src="images/instagram.svg" alt="Instagram"></a></li>
+                        <li><a href="https://twitter.com/?lang=en"><img src="images/twitter.svg" alt="Twitter"></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br style="clear:both;">
+    <span><small><i>copyright &copy; 2022 BookHome</i></small></span>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

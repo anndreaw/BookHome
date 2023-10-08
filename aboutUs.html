@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang=""en">
+<head>
+    <title>BookHome - About Us </title>
+    <meta charset=""utf-8>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <img src="images/book_home_logo_with_bg.svg">
+        <h1>BookHome</h1>
+    </div>
+</header>
+
+<main class="about-us-page">
+    <!--NAVIGATION BAR-->
+    <div id="navTop" style="position:sticky; top:0; z-index:10;" class="nav-top">
+        <nav class="nav-top container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Books</a>
+                    <div class="dropdown-content">
+                        <a href="deals.html">Deals</a>
+                        <a href="fiction.html">Fiction</a>
+                        <a href="nonFiction.html">Non-Fiction</a>
+                    </div>
+                </li>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li class="menu">
+                    <a href="javascript:void(0);" onclick="navBarMinimize()"><img src="images/menu_icon.svg" alt="menu icon"></a>
+                </li>
+            </ul>
+            <div class="nav-right">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search">
+                    <button><img src="images/search_icon.svg" alt="search icon"></button>
+                </div>
+                <div id="not-login" class="login-icon">
+                    <a href="logIn.html">Log-in/Sign-up</a>
+                </div>
+                <div class="shopping-cart">
+                    <a href="shoppingCart.html"><img src="images/shopping_cart_icon.svg" alt=" shopping cart"></a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!--MAIN CONTENTS-->
+    <section class="video-header">
+        <video src="images/about_us.mp4" muted loop autoplay class="showcase"></video>
+    </section>
+    <section class="content">
+    <div class="information container">
+        <div class="image">
+            <img src="images/unboxing_of_books.jpg"alt="unboxing of books">
+        </div>
+        <div class="text">
+            <h2 class="section-headers">Quality books at cheap prices!</h2>
+            <p>Brand new books are often costly to many book lovers with limited resources. Thus, our aim 
+            is to help provide quality books at an affordable price. Our company ensures that the 
+            condition of books are carefully examined and graded accordingly before sold. The books here 
+            are all donated or sold from bookstores or even our customers! If you wish to donate or sell any books
+            <a href="aboutUs.html#ConUs">contact us below!</a></p>
+        </div>
+    </div>
+    </section>
+    <section class="content">
+    <div class="information container">
+        <div class="text">
+            <h2 class="section-headers">Graded carefully</h2>
+            <ul>
+                <li>
+                    <strong>Like New </strong><br>
+                    Books that are either not opened before or are in mint condition. No markings or stains in the pages.
+                </li>
+                <li>
+                    <strong>Good Condition</strong><br>
+                    Books that shows small signs of wear. Spine might be slightly creased with minimal stains. 
+                    Pages are all intact. May show light tanning or foxing on the pages.
+                </li>
+                <li>
+                    <strong>Acceptable Condition </strong><br>
+                    Books that have been well read. All pages are intact with a creased spine. May show medium 
+                    to heavy tanning or foxing of pages but does not interfere with readability.
+                </li>
+            </ul>
+        </div>
+        <div class="image">
+            <img src="images/packaged_books.jpg"alt="unboxing of books">
+        </div>
+    </div>
+    </section>
+    <section class="content" >
+        <div class="contact-us information container">
+            <div class="image">
+                <img src="images/contact_us_img.jpg"alt="unboxing of books">
+            </div>
+            <div class="text">
+                <h2 class="section-headers" id="ConUs">Contact Us</h2>
+                <ul class="text2">
+                        <li>
+                            <h3>Send us a message</h3>
+                            <div id="conUsErrorMsg" class="error-msg" style="display: none">
+                                <!--error message input with javascript-->
+                            </div>
+                            <form action="" name="contactUsForm" id="contactUsForm" method="post" >
+                                <div>
+                                <input type="text" id="contactName" class="name" placeholder="Enter your name">
+                                </div>
+                                <div>
+                                <input type="email" id="contactEmail" placeholder="Enter your email">
+                                </div>
+                                <div>
+                                <textarea class="message" id="contactMsg" placeholder="Add your message" style="margin-top: 10px;"></textarea>
+                                </div>
+                                <button type="submit" id="contactUsSubmit" onclick="return validateContactForm()">
+                                    Submit
+                                </button>
+                            </form>   
+                        </li>
+                        <li>
+                            <h3>Our email</h3>
+                            bookHome@gmail.com
+                        </li>
+                        <li>
+                            <h3>Our social medias</h3>
+                            <div>
+                                <ul class="social-media" style="justify-content:center;">
+                                    <li><a href="https://www.facebook.com"><img src="images/facebook.svg" alt="Facebook"></a></li>
+                                    <li><a href="https://www.instagram.com/?hl=en"><img src="images/instagram.svg" alt="Instagram"></a></li>
+                                    <li><a href="https://twitter.com/?lang=en"><img src="images/twitter.svg" alt="Twitter"></a></li>
+                                </ul>
+                            </div>
+                        </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--POP UP AFTER SUBMITTED-->
+    <div id="popUp" class="popup">
+        <div class="popup-content">
+            <h2>Message Received!</h2>
+            <div id="popupMsg">blank</div><!--use javascript to add text-->
+            <span class="close button">OK</span>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <!--BOTTOM NAVIGATION BAR-->
+    <nav class="bottom container">
+        <div class="col about-us">
+            <h4><a href="aboutUs.html">About Us</a></h4>
+        </div>
+        <div class="col book-nav">
+            <h4>Books</h4>
+            <ul>
+                <li><a href="deals.html">Deals</a></li>
+                <li><a href="fiction.html">Fiction</a></li>
+                <li><a href="nonFiction.html">Non-Fiction</a></li>
+            </ul>
+        </div>
+        <div class="col contact-us">
+            <h4><a href="aboutUs.html#ConUs">Contact Us</a></h4>
+            <ul>
+                <li class="newsletter">
+                    <p><i>Connect with our newsletter</i></p>
+                    <div>
+                        <input class="newsletter" type="text" placeholder="Enter your email">
+                    </div>   
+                </li>
+                <li>
+                    <ul class="social-media">
+                        <li><a href="https://www.facebook.com"><img src="images/facebook.svg" alt="Facebook"></a></li>
+                        <li><a href="https://www.instagram.com/?hl=en"><img src="images/instagram.svg" alt="Instagram"></a></li>
+                        <li><a href="https://twitter.com/?lang=en"><img src="images/twitter.svg" alt="Twitter"></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br style="clear:both;">
+    <span><small><i>copyright &copy; 2022 BookHome</i></small></span>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
